@@ -10,7 +10,7 @@ if (asin_elements.length == 0) {
     if (asin.match(/\D/) === null) {
         var x = window.open('https://www.librarything.com/addbooks' + asin, 'add_review');
     } else {
-        var x = window.open('https://www.librarything.com/search.php?term=' + asin);
+        var x = window.open('https://www.librarything.com/addbooks' + asin);
     }
     x.focus();
 }
