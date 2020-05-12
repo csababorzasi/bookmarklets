@@ -1,0 +1,11 @@
+
+javascript:(function(){
+    var s=window.getSelection().toString();if(s){
+    var i=s;
+}else{
+    var i=prompt(‘Search Site:
+    ‘+location.hostname,’’);
+}if(i==null){
+    return;
+    }else{
+        u=’https://www.goodreads.com/search?utf8=✓&q='+encodeURIComponent(i);}window.open(u);})();
